@@ -1,0 +1,13 @@
+<h1 style="color: white;">Online Auction System</h1>
+<hr>
+<div class="row justify-content-center">
+    <div class="col-9">
+        <form class="p-4" (ngSubmit)="loggin()">
+            <input type="text" [(ngModel)]="name" name="name" class="input-container" placeholder="Write your nickname"
+                autofocus>
+            <button [disabled]="name.trim().length===0" class="btnlogin">
+                Start
+            </button>
+        </form>
+    </div>
+</div>

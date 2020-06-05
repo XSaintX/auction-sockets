@@ -1,0 +1,34 @@
+.flash {
+    animation-name: flash;
+     animation-duration: 0.2s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+     animation-play-state: running;
+     
+ }
+ 
+ @keyframes flash {
+     from {color: red;}
+     to {color: white;}
+ }
+
+ .blink_me {
+    animation: blinker 1s linear infinite;
+    color:white;
+  }
+  .mayor {
+     color:white;
+   }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .blink_five {
+     animation: blinker 1s linear infinite;
+     color: red;
+   }
+   

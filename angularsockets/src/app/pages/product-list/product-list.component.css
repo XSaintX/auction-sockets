@@ -1,0 +1,19 @@
+.selected {background:#008fb4}
+
+.layout-row{
+
+    display: flex;
+    align-items: stretch;
+
+}
+
+.bm--card-equal-height {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+ }
+ .bm--card-equal-height .card-footer {
+    margin-top: auto;
+ }
+
+ 

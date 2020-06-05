@@ -1,0 +1,19 @@
+<div class="product">
+    <img class="product-image" src="{{product.imageUrl}}" />
+
+    <div class="product-details">
+        <p class="product-details__name">{{ product.name }}</p>
+    </div>
+    <div class="product-info-container">
+        <div class="product-details">
+            <p class="product-details__price">Price: {{ product.price | currency:'USD':'symbol':'1.2-2' }}</p>
+        </div>
+        <div class="product-description">
+            <span style="color:red;font-weight:bold">
+                <h1>
+                    {{ product.status }}
+                </h1>
+            </span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+
+    <small style="color:white">Connected: <h1 style="color:white">{{wsService.user.name}}</h1></small>
+    <button class="btnlogin btn-danger" (click)="out()">
+        Log Out
+    </button>
+    <button class="btnlogin btn-success" (click)="AuctionStart()" *ngIf="isOn">
+        Buy item
+    </button>
+    <hr>
+
+    <div class="row">
+        <div class="col-6">
+            <app-list-users>
+
+            </app-list-users>
+        </div>
+        <div class="col-6">
+            
+            <app-subasta>
+
+            </app-subasta>
+            
+        </div>
+    </div>

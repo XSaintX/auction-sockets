@@ -1,0 +1,9 @@
+<ul class="list-group">
+    <li class="list-group-item"
+        *ngFor="let us of activeusers | async">        
+        {{us.username}}
+        <span class="badge badge-danger"><h2>
+            {{us.points}}</h2>
+        </span>
+    </li>
+</ul>

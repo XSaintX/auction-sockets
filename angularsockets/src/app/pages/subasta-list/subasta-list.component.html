@@ -1,0 +1,15 @@
+<div class="ui items">
+    <div id="spinloading" *ngIf="cantidaditems===0">
+        <mat-progress-spinner mode="indeterminate">
+        </mat-progress-spinner>
+    </div>
+    <app-subasta-row *ngFor="let p of itemList" [item]="p">
+    </app-subasta-row>
+    <br>
+    <div *ngIf="soldout===false">
+        <h1 id="myHeader" [ngClass]="customCss">{{ contador }}</h1>
+    </div>
+    <div *ngIf="soldout===true">
+        <h1 id="loading" class="flash">{{ contador }}</h1>
+    </div>
+</div>
