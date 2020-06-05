@@ -59,7 +59,6 @@ let doEverySecond = (io: socketIO.Server) => {
 
 export const configureUser = (client: Socket, io: socketIO.Server) => {
     client.on('configure-user', (payload: { name: string }, callback: Function) => {
-        console.log('configure-user')
         usersConnected.updateName(client.id, payload.name);
         io.emit('active-users', usersConnected.getList())
         callback({
