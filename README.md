@@ -2,7 +2,7 @@
 ![Alt text](/angularsockets/src/app/img/product_list.jpg?raw=true)<br>
 A Real-Time Auction using Angular and express with sockets. 
 ## UI Description
-The app allows to login as admin or any other user, if you login as admin you can access to all the available products and you can start auction with the hammer auction button. If you login as any user, you can see the auction items live, if there is no auction items it will show a spinner. But if there is an auction item press the buy item button to start increasing bidding and all that info will show you to all users connected with a countdown of 15 seconds. When reaches 0 will show the owner of the product.
+The app allows to login as admin or any other user, if you login as admin you can access to all the available products and you can start auction with the hammer auction button. If you login as any user, you can see the auction items live, if there is no auction items it will show a spinner. But if there is an auction item press the buy item button to start increasing bidding and all that info will show you to all users connected with a countdown of 15 seconds, if another user press buy item button the countdown will be restarted and if the admin logout the auction will be finished. When the countdown reaches 0 will show the owner of the product.
 
 ## Features
 - Angular 9
