@@ -26,7 +26,7 @@ export default class Server {
             socket.connectClient(client, this.io);
             socket.configureUser(client, this.io);
             socket.getUsers(client, this.io);
-            socket.desconectar(client, this.io);
+            socket.disconnect(client, this.io);
             socket.auctionstartsocket(client, this.io);
         })
     }

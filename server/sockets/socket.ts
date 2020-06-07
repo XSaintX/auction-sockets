@@ -15,7 +15,7 @@ export const connectClient = (client: Socket, io: socketIO.Server) => {
     usersConnected.add(user);
 }
 
-export const desconectar = (client: Socket, io: socketIO.Server) => {
+export const disconnect = (client: Socket, io: socketIO.Server) => {
     client.on('disconnect', () => {
         usersConnected.deleteUser(client.id);
         io.emit('active-users', usersConnected.getList())
