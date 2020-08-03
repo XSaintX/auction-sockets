@@ -2,7 +2,7 @@
 ![Alt text](/angularsockets/src/app/img/product_list.jpg?raw=true)<br>
 A Real-Time Auction using Angular and express with sockets. 
 ## UI Description
-The app allows to login as admin or any other user, if you login as admin you can access to all the available products and you can start auction with the hammer auction button. If you login as any user, you can see the auction items live, if there is no auction items it will show a spinner. But if there is an auction item press the buy item button to start increasing bidding and all that info will show you to all users connected with a countdown of 15 seconds, if another user press buy item button the countdown will be restarted and if the admin logout the auction will be finished. When the countdown reaches 0 will show the owner of the product.
+The app allows the user to login as the admin, or as an other user. If you login as the admin you can access all the available products and you can start auctions with the gavel button. If you login as a user, you can see the auction items live. If there is no auction items the app will show a spinner. As a user, you may press the buy item button on an auction item to start increasing bidding. The app will show you info about all users connected, with a countdown of 15 seconds. If another user presses the buy item butto, the countdown will be restarted. If the admin logs out the auction will be finished. When the countdown reaches 0, the app will show the owner of the product.
 
 ## Features
 - Angular 9
@@ -14,7 +14,7 @@ The app allows to login as admin or any other user, if you login as admin you ca
 - Angular forms
 - Http
 - Scalable architecture
-- Following the best practices!
+- Following best practices!
 
 ## Usage
 ### Using the project on your local environment
@@ -27,7 +27,7 @@ The app allows to login as admin or any other user, if you login as admin you ca
   * `Open CMD & navigate to angularsockets folder`
   * `Fifth command 'npm install'`  
   
-   If everything goes fine then your server is running. In my case it is **http://localhost:5000**. 
+   If everything goes fine, then your server is running. In my case it is **http://localhost:5000**. 
    
 ## Development server
 
